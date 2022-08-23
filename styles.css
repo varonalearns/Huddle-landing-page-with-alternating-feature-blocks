@@ -1,0 +1,47 @@
+/*----------------------------------------------------------------------------
+    Mobile Design First
+------------------------------------------------------------------------------*/
+
+/* -------------------- 
+    Variables
+---------------------*/
+:root {
+    /*-----Colors-----*/
+
+    /* Primary */
+    --pink: hsl(322, 100%, 66%);
+
+    /* Neutral */
+    --pale-cyan: hsl(193, 100%, 96%);
+    --dark-cyan: hsl(192, 100%, 9%);
+    --gray-blue: hsl(208, 11%, 55%);
+
+    /*-----Fonts-----*/
+    --ff-headings: 'Poppins', sans-serif;;
+    --ff-body: 'Open Sans', sans-serif;
+}
+
+/* -------------------- 
+    General Styles
+---------------------*/
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--ff-body);
+    font-size: 18px;
+}
+
+/* -------------------- 
+    Specific Styles
+---------------------*/
