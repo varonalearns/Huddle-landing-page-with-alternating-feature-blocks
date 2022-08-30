@@ -21,9 +21,6 @@
     --ff-body: 'Open Sans', sans-serif;
 }
 
-/* -------------------- 
-    General Styles
----------------------*/
 *, ::before, ::after {
     margin: 0;
     padding: 0;
@@ -39,9 +36,178 @@ body {
     margin: 0 auto;
     text-align: center;
     font-family: var(--ff-body);
-    font-size: 18px;
+    font-size: 16px;
+    color: var(--dark-cyan);
+}
+h1,
+h2 {
+    font-family: var(--ff-headings);
+    margin-bottom: 1rem;
+}
+.logo {
+    width: 45%;
+}
+.logo img,
+.illustration img {
+    width: 100%;
+}
+.illustration {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.container {
+    margin-bottom: 2rem;
+}
+ul {
+    list-style: none;
+}
+li {
+    margin-bottom: 1rem;
+}
+a {
+    text-decoration: none;
+    color: var(--pale-cyan);
+}
+a:hover {
+    color: var(--pink);
+}
+/* -------------------- 
+    Hero Section
+---------------------*/
+#hero-section {
+    background-color: var(--pale-cyan);
+    background-image: url("images/bg-hero-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 1rem;
+}
+#hero-section header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+#hero-section header button {
+    width: 100px;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    color: var(--dark-cyan);
+    font-weight: 700;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+#hero-section h1 {
+    font-size: 24px;
+}
+#hero-section p {
+    margin-bottom: 2rem;
+}
+#hero-section button {
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background-color: var(--pink);
+    font-size: 12px;
+    padding: 0.5rem;
+    width: 70%;
 }
 
 /* -------------------- 
-    Specific Styles
+    Features Section
 ---------------------*/
+#features-section {
+    padding: 0rem 1rem;
+}
+.card {
+    margin-top: 3rem;
+    padding: 3rem 1.50rem;
+    border-radius: 16px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+#feautes-section .container p {
+    color: var(--gray-blue);
+    font-size: 14px;
+}
+
+/* -------------------- 
+    Footer Section
+---------------------*/
+footer {
+    color: var(--pale-cyan);
+    background-color: var(--dark-cyan);
+    text-align: left;
+    margin-top: 10rem;
+    padding: 9rem 1rem 5rem 1rem;
+    position: relative;
+}
+
+/* Start Call-To-Action Card */
+#cta-card {
+    z-index: 100;
+    position: absolute;
+    background-color: white;
+    margin: 0rem 1rem;
+    padding: 2rem;
+    top: -95px;
+    left: -1px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#cta-card h2 {
+    color: var(--dark-cyan);
+    font-size: 18px;
+}
+#cta-card button {
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background-color: var(--pink);
+    font-size: 10px;
+    padding: 0.75rem;
+    width: 75%;
+}
+/* End Call-To-Action Card */
+
+footer .logo {
+    margin-bottom: 1.5rem;
+}
+address {
+    font-style: normal;
+    margin-bottom: 2rem;
+}
+address ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+address ul li img {
+    margin-right: 1.5rem;
+}
+address ul li:first-child img {
+    align-self: flex-start;
+    margin-top: 0.35rem;
+}
+
+/* Social Media */
+#social-media ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.no-hover {
+    width: 40%;
+}
+.on-hover {
+    display: none;
+}
+
+/* Attribution */
+#attribution {
+    text-align: center;
+}
